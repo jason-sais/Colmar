@@ -1,0 +1,367 @@
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/*main styles*/
+*{
+    box-sizing: border-box;
+}
+
+* {
+    font-family: Roboto;
+    margin: 0px 0px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-weight: 900;
+    color: rgb(65, 62, 62);
+    line-height: 1.2;
+}
+
+h2 {
+    line-height: 1.5;
+    font-weight: normal;
+    color: rgb(65, 62, 62);
+}
+
+P {
+    color: rgb(65, 62, 62);
+    line-height: 1.5;
+}
+
+
+/*header*/
+
+header {
+    display: flex;
+    height: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 16px;
+    margin-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 64px;
+    width: auto;
+    margin-left: 24px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: rgb(65, 62, 62);
+    }
+
+.title span {
+    color: gray;
+}
+
+/*bannner*/
+
+.banner {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.banner img {
+    height: auto;
+    width: 60%;
+    margin: 32px 24px;
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    justify-content: space-around;
+    margin-left: 24px;
+    margin: auto;
+}
+
+#content h1, #content h2, #content .button {
+    margin-top: 1.5rem;
+} 
+
+.button {
+    color: white;
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(65, 62, 62);
+    text-align: center;
+    height: auto;
+}
+
+.button h3 {
+    font-weight: normal;
+}
+
+.button:hover {
+    background-color: gray;
+    transition: background-color .5s ease-out;
+}
+
+/*info*/
+
+.info {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-left: 24px;
+    margin-top: 42px;
+}
+
+#info_left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#info_left img {
+    width: 100%;
+    height: auto;
+}
+
+#info_left h1 {
+    margin-top: 32px;
+}
+
+#info_left p {
+    margin: 24px 0px;
+    
+}
+
+#quote_attribute {
+    margin-bottom: 32px 0px;
+}
+
+#info_right {
+    width: 35%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.container {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+}
+
+
+.container img {
+    height: auto;
+    width: 35%;
+    margin: 16px;
+
+}
+
+.content_right{
+    Width: 65%;
+    Height: auto;
+    Display: inline-block;
+    }
+
+#guest_lecture{
+        background-color: lightgrey;
+
+    }
+.content_right h4 {
+margin-top:8px;
+margin-bottom: 8px;
+}
+
+.content_right p {
+    margin-top:8px;
+    margin-bottom: 8px;
+    font-size: .8rem;
+    }
+
+
+.content_right a {
+        margin-top:8px;
+        margin-bottom: 8px;
+        }
+
+    /*learning*/
+
+.learning {
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.learning h1 {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+.learning_boxes {
+    display: flex;
+    margin: 32px 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.learning_container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    justify-content: flex-start;
+
+
+}
+
+.learning_container img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.learning_container h4, .learning_container h5, .learning_container p {
+    margin: 4px 16px;
+    color: rgb(65, 62, 62);
+}
+
+.learning_container p {
+    font-size: .8rem;
+}
+
+.learning_container h5 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*thesis*/
+
+.thesis {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
+.thesis h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.thesis_content {
+    display: flex;
+    width: 100%;
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: flex-start;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#fisma {
+    background-color: lightgray;
+}
+
+.left_container h4 {
+    margin-top: 24px;
+}
+
+.left_container p {
+    margin-top: 8px;
+}
+/*footer*/
+
+footer {
+    border-top: 1px solid lightgray;
+    padding-top: 16px;
+    padding-left: 14px;
+    padding-right: 8px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    font-style: normal;
+    font-size: .75rem;
+}
+
+i {
+    color: rgb(65, 62, 62);
+}
+.footer_links a {
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+}
