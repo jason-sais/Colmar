@@ -631,3 +631,9 @@ i {
     color: rgb(65, 62, 62);
     margin-right: 8px;
 }
+
+@media screen and (max-width: 800px){
+    footer {
+        font-size: .5rem
+    }
+}
