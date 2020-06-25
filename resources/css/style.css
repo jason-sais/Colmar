@@ -280,8 +280,10 @@ nav {
 
     #content {
         width: 100%;
-        text-align: left;
+        text-align: center;
         align-items: center;
+        line-height: 1.0;
+        font-size: .75em;
     }
 
     .button {
