@@ -219,7 +219,8 @@ nav {
     display: flex;
     height: auto;
     width: 100%;
-    background-color: lightgrey;
+    border-bottom: 4px double  rgb(65, 62, 62);
+    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
     padding-top: 64px;
 }
 
@@ -238,6 +239,10 @@ nav {
     justify-content: space-around;
     margin-left: 24px;
     margin: auto;
+}
+
+#content h1, #content h2, #content p {
+    color: lightgray;
 }
 
 #content h1, #content h2, #content .button {
@@ -299,8 +304,9 @@ nav {
     display: flex;
     height: auto;
     width: 100%;
-    margin-left: 24px;
+    padding-left: 24px;
     margin-top: 42px;
+    border-bottom: 4px double  rgb(65, 62, 62);
 }
 
 #info_left {
@@ -363,9 +369,13 @@ picture img {
     }
 
 #guest_lecture{
-        background-color: lightgrey;
-
+    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
+        
     }
+
+#guest_lecture .content_right h4, #guest_lecture .content_right p, #guest_lecture .content_right a{
+    color: lightgray;
+}
 .content_right h4 {
 margin-top:8px;
 margin-bottom: 8px;
@@ -420,7 +430,8 @@ margin-bottom: 8px;
     }
 
     #guest_lecture {
-        background-color: white;
+        background:none;
+        background-color: none;
     }
 
     .content_right h4 {
@@ -429,6 +440,11 @@ margin-bottom: 8px;
 
     .content_right p {
         font-size: 1.5rem;
+    }
+
+    #guest_lecture .content_right h4, #guest_lecture .content_right p, #guest_lecture .content_right a {
+        color: rgb(65, 62, 62);
+
     }
 
 
@@ -440,16 +456,19 @@ margin-bottom: 8px;
 .learning {
     width: 100%;
     height: auto;
-    background-color: lightgray;
-    margin-top: 32px;
+    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
+    padding-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-bottom: 4px double  rgb(65, 62, 62);
+
 }
 
 .learning h1 {
         text-align: center;
         margin-top: 32px;
+        color: lightgray;
     }
 
 .learning_boxes {
@@ -517,9 +536,14 @@ margin-bottom: 8px;
     }
 
     .learning {
-        background-color: white;
+        background:none;
+        background-color: none;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .learning h1 {
+        color: rgb(65, 62, 62);
     }
 }
 
@@ -564,8 +588,11 @@ video {
 
 
 #fisma {
-    background-color: lightgray;
-    
+    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
+}
+
+#fisma .content_right h4, #fisma .content_right p {
+    color: lightgray;
 }
 
 .left_container h4 {
