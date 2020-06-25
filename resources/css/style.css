@@ -168,6 +168,12 @@ nav {
     color: gray;
 }
 
+@media screen and (max width:800px) {
+    {
+
+    }
+}
+
 /*bannner*/
 
 .banner {
@@ -216,6 +222,32 @@ nav {
 .button:hover {
     background-color: gray;
     transition: background-color .5s ease-out;
+}
+
+@media only screen and (max-width:800px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    #content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .button {
+        width: 200px;
+        margin-top: 0px;
+        margin-bottom: 32px;
+    }
 }
 
 /*info*/
@@ -269,11 +301,16 @@ nav {
 }
 
 
-.container img {
+picture {
     height: auto;
     width: 35%;
     margin: 16px;
 
+}
+
+picture img {
+    height: 100%;
+    width: 100%;
 }
 
 .content_right{
@@ -302,6 +339,52 @@ margin-bottom: 8px;
         margin-top:8px;
         margin-bottom: 8px;
         }
+
+ @media screen and (max-width:800px) {
+     .info {
+         flex-direction: column;
+         margin-left: 16px;
+         margin-right: 16px;
+     }
+
+     #info_left {
+         width: 100%;;
+         text-align: center;
+         margin-left: 0px;
+         
+     }
+    
+     #info_right {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #info_right .container {
+        flex-direction: column;
+        padding: 0px 0px;
+        align-items: left;
+        margin-top: 32px;
+        
+    }
+
+    picture {
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .content_right {
+        width: 100%;
+    }
+
+    #guest_lecture {
+        background-color: white;
+    }
+
+
+ }
+
 
     /*learning*/
 
@@ -375,6 +458,8 @@ margin-bottom: 8px;
     margin-bottom: 32px;
 }
 
+
+
 .thesis_content {
     display: flex;
     width: 100%;
@@ -411,6 +496,11 @@ video {
     height: auto;
     width: 40%;
     
+}
+.thesis .container img {
+    height: auto;
+    width: 35%;
+    margin: 16px;
 }
 /*footer*/
 
