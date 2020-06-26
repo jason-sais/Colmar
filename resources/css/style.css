@@ -219,8 +219,7 @@ nav {
     display: flex;
     height: auto;
     width: 100%;
-    border-bottom: 4px double  rgb(65, 62, 62);
-    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
+    background: linear-gradient(rgba(1, 13, 26, 0.904),rgba(33, 110, 197, 0.829));
     padding-top: 64px;
 }
 
@@ -242,7 +241,7 @@ nav {
 }
 
 #content h1, #content h2, #content p {
-    color: lightgray;
+    color: white;
 }
 
 #content h1, #content h2, #content .button {
@@ -306,7 +305,6 @@ nav {
     width: 100%;
     padding-left: 24px;
     margin-top: 42px;
-    border-bottom: 4px double  rgb(65, 62, 62);
 }
 
 #info_left {
@@ -347,8 +345,8 @@ nav {
     display: flex;
     padding: 16px;
     align-items: center;
+    border-bottom: 2px solid rgb(65, 62, 62);
 }
-
 
 picture {
     height: auto;
@@ -368,14 +366,12 @@ picture img {
     Display: inline-block;
     }
 
-#guest_lecture{
-    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
-        
-    }
-
-#guest_lecture .content_right h4, #guest_lecture .content_right p, #guest_lecture .content_right a{
-    color: lightgray;
+.container:hover{
+    background-color: rgba(33, 110, 197, 0.829);
+    box-shadow: inset -1px 0px 14px -3px #292A33;
+    transition: all .15s ease-in-out;
 }
+
 .content_right h4 {
 margin-top:8px;
 margin-bottom: 8px;
@@ -396,7 +392,7 @@ margin-bottom: 8px;
  @media screen and (max-width:800px) {
      .info {
          flex-direction: column;
-         margin-left: 0px;
+         padding-left: 0px;
          margin-right: 0px;
      }
 
@@ -417,6 +413,8 @@ margin-bottom: 8px;
         padding: 0px 0px;
         align-items: left;
         margin-top: 32px;
+        background:none;
+        background-color: none;
         
     }
 
@@ -435,19 +433,16 @@ margin-bottom: 8px;
     }
 
     .content_right h4 {
-        font-size: 2rem;
-    }
-
-    .content_right p {
         font-size: 1.5rem;
     }
 
-    #guest_lecture .content_right h4, #guest_lecture .content_right p, #guest_lecture .content_right a {
-        color: rgb(65, 62, 62);
-
+    .content_right p {
+        font-size: 1.1rem;
     }
-
-
+    .container:hover{
+    box-shadow: -1px 0px 7px 5px #292A33;
+    transition: all .15s ease-in-out;
+    }
  }
 
 
@@ -456,19 +451,18 @@ margin-bottom: 8px;
 .learning {
     width: 100%;
     height: auto;
-    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
+    background: linear-gradient(rgba(1, 13, 26, 0.904),rgba(33, 110, 197, 0.829));
     padding-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-bottom: 4px double  rgb(65, 62, 62);
 
 }
 
 .learning h1 {
         text-align: center;
         margin-top: 32px;
-        color: lightgray;
+        color: white;
     }
 
 .learning_boxes {
@@ -486,8 +480,11 @@ margin-bottom: 8px;
     width: 300px;
     background-color: white;
     justify-content: flex-start;
+}
 
-
+.learning_container:hover {
+    box-shadow: -1px 0px 7px 5px #292A33;
+    transition: all .15s ease-in-out;
 }
 
 .learning_container img {
@@ -583,17 +580,8 @@ margin-bottom: 8px;
 video {
     width: 100%;
     height: auto;
-    
 }
 
-
-#fisma {
-    background: linear-gradient(rgba(15, 70, 15, 0.815),rgba(40, 128, 40, 0.815));
-}
-
-#fisma .content_right h4, #fisma .content_right p {
-    color: lightgray;
-}
 
 .left_container h4 {
     margin-top: 24px;
